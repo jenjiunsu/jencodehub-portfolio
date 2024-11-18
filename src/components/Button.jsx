@@ -1,8 +1,8 @@
-const Button = () => {
+const Button = ({ name = false, containerClass }) => {
     return (
-    <div>
-        Button
-    </div>
+    <button className={`btn $${containerClass}`}>
+        {name}
+    </button>
     )
 }
 

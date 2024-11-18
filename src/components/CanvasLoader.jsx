@@ -14,6 +14,7 @@ const CanvasLoader = () => {
                 top: '10%',
                 right: '10%',
                 transform: 'translate(50%, -50%)',
+                zIndex: 1000,
             }}
         >
             <span className='canvas-loader' />
