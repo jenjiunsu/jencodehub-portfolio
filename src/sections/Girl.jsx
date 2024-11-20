@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber"
 import SwitchGirl from "../components/SwitchGirl";
 import { Suspense, useState, useEffect } from "react";
 import CanvasLoader from "../components/CanvasLoader";
-// import { Leva, useControls } from "leva";
+import { Leva} from "leva";
 import { useMediaQuery } from 'react-responsive';
 import { calculateSizes } from "../constants";
 import Rocket from "../components/Rocket";
@@ -12,7 +12,7 @@ import GirlCamera from "../components/GirlCamera";
 import Button from "../components/Button";
 
 const Girl = () => {
-    const [canvasSize, setCanvasSize] = useState({ width: window.innerWidth, height: window.innerHeight });
+    const [setCanvasSize] = useState({ width: window.innerWidth, height: window.innerHeight });
 
     useEffect(() => {
         const handleResize = () => {
@@ -67,9 +67,9 @@ const Girl = () => {
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
     return (
-        <section className='px-24 h-full flex-col relative'>
+        <section className='min-h-[40vh] max-h-screen flex-col relative' id='home'>
             {/* <Leva /> */}
-            <div className='mx-auto flex flex-col sm:mt-30 mt-20 c-space gap-3 letter-spacing-wide'>
+            <div className='mx-auto flex flex-col sm:mt-[8rem] mt-[8rem] c-space gap-3 letter-spacing-wide'>
                 <p className='sm:text-2xl text-1xl font-medium text-gray_gradient tracking-wide'>Hello, I’m Jen Jiun!</p>
                 <p className='girl_tag text-2xl sm:text-3xl md:text-5xl font-medium text-white text-center md:text-left tracking-wide'>
                     Crafting Code,<br />
@@ -83,37 +83,37 @@ const Girl = () => {
                 </div>
             </div>
 
-            <div className="w-full h-[calc(100vh-80px)] absolute inset-0 flex flex-col sm:flex-row justify-center items-center">
-                <div className='flex justify-center items-center'>
-                    <Canvas style={{ width: canvasSize.width, height: canvasSize.height }}>
-                        <Suspense fallback={<CanvasLoader />}>
-                            <PerspectiveCamera 
-                                makeDefault 
-                                position={isMobile ? [2, 3, 35] : isTablet ? [0, -1.5, 40] : [0, -2, 45]} 
-                            />
+            <div className="w-full h-full absolute inset-0">
+                <Canvas className='w-full h-full'>
+                    <Suspense fallback={<CanvasLoader />}>
+                        {/* To hide controller */}
+                        <Leva hidden />
+                        <PerspectiveCamera 
+                            makeDefault 
+                            position={isMobile ? [2, 3, 35] : isTablet ? [0, -1.5, 40] : [0, -2, 45]} 
+                        />
 
-                            <GirlCamera isMobile={isMobile}>
-                                <SwitchGirl 
-                                    position={isMobile ? [4, 6.5, 10] : isTablet ? [9, 6, 10] : [9.1, 6.5, 10]}
-                                    rotation={[0.2, -1.8, -0.2]}
-                                    scale={isMobile ? [6.5, 6.5, 6.5] : isTablet ? [9.5, 9.5, 9.5] : [12, 12, 12]}
-                                />
-                            </GirlCamera>
-                            
-                            <Rocket 
-                                position={isMobile ? [1, 11, 13] : isTablet ? [4, 9, 8.5] : [3, 11, 10]}
-                                rotation={[-10, Math.PI / -1.5, -10]}
-                                scale={isMobile ? [1.3, 1.3, 1.3] : isTablet ? [1.95, 1.95, 1.95] : [2.85, 2.75, 2.75]}
+                        <GirlCamera isMobile={isMobile}>
+                            <SwitchGirl 
+                                position={isMobile ? [11.5, 4, 8] : isTablet ? [19, 0, 10] : [17, -0.5, 10]}
+                                rotation={[0, -2, 0]}
+                                scale={isMobile ? [10, 10, 10] : isTablet ? [18, 18, 18] : [23, 23, 23]}
                             />
-                            <Cube 
-                                position={isMobile ? [8, 7, 8.5] : isTablet ? [12.5, 3.5, 8.5] : [19.1, 1.3, 0]}
-                                scale={isMobile ? [0.45, 0.45, 0.45] : isTablet ? [0.6, 0.6, 0.6] : [0.85, 0.75, 0.75]}
-                            />
-                            <ambientLight intensity={3.5} />
-                            <directionalLight position={[15, 30, 10]} intensity={0.5} />
-                        </Suspense>
-                    </Canvas>
-                </div>
+                        </GirlCamera>
+                        
+                        <Rocket 
+                            position={isMobile ? [6, 7, 5] : isTablet ? [13, 7, 8.5] : [5, 7, 5]}
+                            rotation={[-10, Math.PI / -1.5, -10]}
+                            scale={isMobile ? [2, 2, 2] : isTablet ? [3, 3, 3] : [4, 4, 4]}
+                        />
+                        <Cube 
+                            position={isMobile ? [22, -0.2, -5] : isTablet ? [28, -10, 8] : [47, -10, 0]}
+                            scale={isMobile ? [0.5, 0.5, 0.5] : isTablet ? [1, 1, 1] : [1.5, 1.5, 1.5]}
+                        />
+                        <ambientLight intensity={3.5} />
+                        <directionalLight position={[15, 30, 10]} intensity={0.5} />
+                    </Suspense>
+                </Canvas>
             </div>
         </section>
     )

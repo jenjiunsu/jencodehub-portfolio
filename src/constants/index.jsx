@@ -16,6 +16,11 @@ export const navLinks = [
 },
 {
     id: 4,
+    name: 'Experience',
+    href: '#experience',
+},
+{
+    id: 5,
     name: 'Contact',
     href: '#contact',
 },
@@ -61,12 +66,12 @@ export const myProjects = [
 },
 {
     title: 'Coming Soon...',
-    desc: 'Stay tuned for exciting new projects!',
-    subdesc: 'We are working on something amazing. Check back soon for updates.',
+    desc: [],
+    subdesc: [],
     href: [],
-    spotlight: '/assets/spotlight00.png',
-    logo: '/assets/coming-soon-logo.png',
-    texture: '/textures/project/project1.mp4',
+    spotlight: '/textures/project/project3.mp4',
+    logo: [],
+    texture: '/textures/project/project2.mp4',
     tags: [],
 },
 

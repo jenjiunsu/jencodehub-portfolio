@@ -10,7 +10,7 @@ const DemoComputer = (props) => {
     const { actions } = useAnimations(animations, group)
 
     const videoTexture = useVideoTexture(
-        props.texture || 'textures/project/project1.mp4',
+        props.texture || 'textures/project/project1.mp4','textures/project/project2.mp4',
         {
             crossOrigin: 'Anonymous',
             loop: true,

@@ -8,7 +8,7 @@ import Experience from "./sections/Experience"
 
 function App() {
   return (
-    <main className='max-w-8xl mx-auto relative'>
+    <main className='max-w-7xl mx-auto relative'>
       <Navbar />
       <Girl />
       <About />
