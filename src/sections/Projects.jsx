@@ -50,7 +50,7 @@ const Projects = () => {
 
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full relative">
                 <div
-                    className={`custom-border flex flex-col relative pb-5 sm: px-5 shadow-2xl shadow-black-200 ${
+                    className={`bg-black-100 custom-border flex flex-col relative pb-5 sm: px-5 shadow-2xl shadow-black-200 ${
                         currentProject.title === 'Coming Soon...' ? 'bg-[#121212]' : ''
                     }`}
                 >
@@ -122,7 +122,7 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+                <div className="custom-border bg-black-200 rounded-lg h-96 sm:h-full">
                     <Canvas>
                         <ambientLight intensity={11} />
                         <directionalLight position={[10, 10, 5]} intensity={2} />

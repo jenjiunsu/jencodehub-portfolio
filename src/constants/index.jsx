@@ -69,7 +69,7 @@ export const myProjects = [
     desc: [],
     subdesc: [],
     href: [],
-    spotlight: '/textures/project/project3.mp4',
+    spotlight: [],
     logo: [],
     texture: '/textures/project/project2.mp4',
     tags: [],

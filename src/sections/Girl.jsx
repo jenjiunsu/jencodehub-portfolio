@@ -67,11 +67,11 @@ const Girl = () => {
     const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
     return (
-        <section className='min-h-[40vh] max-h-screen flex-col relative' id='home'>
+        <section className='sm:min-h-[36vh] md:min-h-[40vh] max-h-screen flex-col relative' id='home'>
             {/* <Leva /> */}
             <div className='mx-auto flex flex-col sm:mt-[8rem] mt-[8rem] c-space gap-3 letter-spacing-wide'>
                 <p className='sm:text-2xl text-1xl font-medium text-gray_gradient tracking-wide'>Hello, I’m Jen Jiun!</p>
-                <p className='girl_tag text-2xl sm:text-3xl md:text-5xl font-medium text-white text-center md:text-left tracking-wide'>
+                <p className='girl_tag text-2xl sm:text-3xl md:text-5xl font-medium text-white text-center md:text-left tracking-wide pb-3'>
                     Crafting Code,<br />
                     Turning Ideas into <br /> Interactive Experiences
                 </p>
@@ -95,20 +95,20 @@ const Girl = () => {
 
                         <GirlCamera isMobile={isMobile}>
                             <SwitchGirl 
-                                position={isMobile ? [11.5, 4, 8] : isTablet ? [19, 0, 10] : [17, -0.5, 10]}
+                                position={isMobile ? [15, -3, 7.5] : isTablet ? [19, -1, 9] : [17, -0.5, 10]}
                                 rotation={[0, -2, 0]}
-                                scale={isMobile ? [10, 10, 10] : isTablet ? [18, 18, 18] : [23, 23, 23]}
+                                scale={isMobile ? [25, 25, 25] : isTablet ? [20, 20, 20] : [23, 23, 23]}
                             />
                         </GirlCamera>
                         
                         <Rocket 
                             position={isMobile ? [6, 7, 5] : isTablet ? [13, 7, 8.5] : [5, 7, 5]}
                             rotation={[-10, Math.PI / -1.5, -10]}
-                            scale={isMobile ? [2, 2, 2] : isTablet ? [3, 3, 3] : [4, 4, 4]}
+                            scale={isMobile ? [5, 5, 5] : isTablet ? [3, 3, 3] : [4, 4, 4]}
                         />
                         <Cube 
-                            position={isMobile ? [22, -0.2, -5] : isTablet ? [28, -10, 8] : [47, -10, 0]}
-                            scale={isMobile ? [0.5, 0.5, 0.5] : isTablet ? [1, 1, 1] : [1.5, 1.5, 1.5]}
+                            position={isMobile ? [20, -10,17] : isTablet ? [28, -10, 8] : [47, -10, 0]}
+                            scale={isMobile ? [1, 1, 1] : isTablet ? [1, 1, 1] : [1.5, 1.5, 1.5]}
                         />
                         <ambientLight intensity={3.5} />
                         <directionalLight position={[15, 30, 10]} intensity={0.5} />

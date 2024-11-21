@@ -14,6 +14,16 @@ body {
   font-family: "General Sans", sans-serif;
 }
 
+:root {
+  --cr-main-1: #2ac9de;
+  --cr-main-2: #f087f4;
+  --cr-1: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 20%);
+  --cr-2: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 35%);
+  --cr-3: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 50%);
+  --cr-4: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 65%);
+  --cr-5: color-mix(in srgb, var(--cr-main-1), var(--cr-main-2) 80%);
+}
+
 @layer utilities {
   .c-space {
     @apply sm:px-10 px-5;
@@ -21,7 +31,7 @@ body {
 
   .head-text {
     @apply sm:text-4xl text-3xl font-semibold;
-    background: linear-gradient(to bottom, #ffffff, #62646c);
+    background: linear-gradient(to bottom, #191919, #62646c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -85,7 +95,7 @@ body {
     right: 0;
     bottom: 0;
     border-radius: 20px;
-    padding: 1px;
+    padding: 3px;
     background: linear-gradient(
       90deg,
       rgba(190, 203, 240, 1) 0%,
@@ -203,6 +213,40 @@ body {
     top: 18px;
   }
 
+  .line {
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  .line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 230, 250, 0.8)
+    );
+    animation: fall var(--ani-duration) var(--ani-delay) linear infinite;
+  }
+
+  @keyframes fall {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+
+  .pt-110 {
+    padding-top: 110px;
+  }
+
   .hexagon-container {
     display: flex;
     justify-content: center;
@@ -212,10 +256,13 @@ body {
   }
 
   .hexagon {
-    width: 150px;
-    height: 130px;
-    background-color: #ddd;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: relative;
+    width: 100px;
+    height: 57.74px;
+    background-color: rgba(255, 255, 255, 0.1);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: all 0.3s ease;
+    margin: 5px;
   }
 
   .text-input-field {
@@ -276,16 +323,6 @@ body {
 
   .grid-container img {
     animation: fadeInScale 1s ease-in-out forwards;
-  }
-
-  .hexagon {
-    position: relative;
-    width: 100px;
-    height: 57.74px;
-    background-color: rgba(255, 255, 255, 0.1);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    transition: all 0.3s ease;
-    margin: 5px;
   }
 
   /* Default styles for base (less than 640px) */
@@ -405,7 +442,7 @@ body {
 
   .coming-soon-text {
     margin-top: 2rem;
-    letter-spacing: 0.35em;
+    letter-spacing: 0.4em;
     text-align: center;
   }
 
@@ -428,6 +465,55 @@ body {
   /* contact section */
   .contact-container {
     @apply max-w-xl relative sm:px-10 mt-12;
+  }
+
+  .blobs {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    filter: blur(140px);
+  }
+
+  .blob {
+    width: max(240px, 28vw);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center;
+  }
+
+  .blob:nth-of-type(1) {
+    background: var(--cr-main-1);
+  }
+
+  .blob:nth-of-type(2) {
+    background: var(--cr-main-2);
+  }
+
+  .blob:nth-of-type(3) {
+    background: var(--cr-1);
+  }
+
+  .blob:nth-of-type(4) {
+    background: whitesmoke;
+  }
+
+  .blob:nth-of-type(5) {
+    background: var(--cr-3);
+  }
+
+  .blob:nth-of-type(6) {
+    background: var(--cr-4);
+  }
+
+  .blob:nth-of-type(7) {
+    background: var(--cr-2);
   }
 
   .field-label {
