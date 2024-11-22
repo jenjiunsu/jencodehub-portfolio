@@ -92,11 +92,12 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="xl:col-span-2 xl:row-span-3">
+                <div className="xl:col-span-2 xl:row-span-3 pt-37.5">
                     <div className="grid-container custom-border bg-black-100">
-                        <div className='unique'><CubeComponent /></div>
-                        <div className="text-input-field pt-37.5">
-                            <span className="typing-animation">{text}</span>
+                        <div className='unique '><CubeComponent />
+                          <div className="text-input-field">
+                              <span className="typing-animation">{text}</span>
+                          </div>
                         </div>
                         <div className='sm: p-3'>
                             <p className="grid-headtext">My Passion for Coding</p>
