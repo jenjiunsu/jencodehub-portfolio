@@ -286,7 +286,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: "Pacifico", cursive;
     font-weight: bold;
     font-size: larger;
@@ -393,6 +393,77 @@ body {
       max-width: 90%;
       height: 500px;
     }
+  }
+
+  .unique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    overflow: hidden;
+  }
+
+  .unique-container {
+    position: relative;
+    transform: skewY(-20deg);
+  }
+
+  .unique-container .unique-cube {
+    position: relative;
+    translate: calc(var(--z) * 60px) calc(var(--z) * 60px);
+  }
+
+  .unique-container .unique-cube .unique-div {
+    position: absolute;
+    translate: calc(-70px * var(--x)) calc(-70px * var(--y));
+  }
+
+  .unique-container .unique-cube .unique-div .unique-span {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #dcdcdc;
+    transition: 0.5s;
+  }
+
+  .unique-container .unique-cube .unique-div .unique-span.active {
+    background: #ef4149;
+    transform: translate(0, -30px);
+  }
+
+  .unique-container .unique-cube .unique-div .unique-span::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #c8c8c8;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+  }
+
+  .unique-container .unique-cube .unique-div .unique-span.active::before {
+    background: #f75d64;
+  }
+
+  .unique-container .unique-cube .unique-div .unique-span::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 1.5s;
+    box-shadow: -20px 20px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .unique-container .unique-cube .unique-div .unique-span.active::after {
+    background: #f14e55;
   }
 
   /* projects section  */

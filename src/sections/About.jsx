@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Box } from '../components/AllChange.jsx';
 import Button from "../components/Button";
+import CubeComponent from '../components/CubeComponent.jsx';
 
 const About = () => {
     const [hasCopied, setHasCopied] = useState(false);
@@ -79,12 +80,12 @@ const About = () => {
                 <div className="col-span-1 xl:row-span-4 relative">
                     <div className="grid-container custom-border bg-black-100">
                         <div className="relative z-10" ref={lineContainerRef}></div>
-                        <div className="rounded-3xl w-full sm:h-[276px] h-fit justify-center items-center pt-110 p-10">
+                        <div className="rounded-3xl w-full sm:h-[276px] h-fit justify-center items-centers pt-110 p-10">
                                 <p className="grid-headtext pb-2">This will be a website I created to document my self-learning journey.</p>
                                 <p className="grid-subtext pb-5">You are welcome to leave messages and interact with me on the site!</p>
                                 <div className="custom-button text-white">
                                   <a href="#">
-                                      <Button name="Welcome to my Blog!" containerClass="sm:tracking-normal md:tracking-wide lg:tracking-wider"/>
+                                      <Button name="It will be coming soon!" containerClass="sm:tracking-normal md:tracking-wide lg:tracking-wider"/>
                                   </a>
                                 </div>
                         </div>
@@ -93,8 +94,8 @@ const About = () => {
 
                 <div className="xl:col-span-2 xl:row-span-3">
                     <div className="grid-container custom-border bg-black-100">
-                        <img src="assets/grid3.png" alt="grid-3" className="w-full sm:h-[316px] h-fit object-contain" />
-                        <div className="text-input-field">
+                        <div className='unique'><CubeComponent /></div>
+                        <div className="text-input-field pt-37.5">
                             <span className="typing-animation">{text}</span>
                         </div>
                         <div className='sm: p-3'>
