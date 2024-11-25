@@ -12,7 +12,7 @@ import GirlCamera from "../components/GirlCamera";
 import Button from "../components/Button";
 
 const Girl = () => {
-    const [setCanvasSize] = useState({ width: window.innerWidth, height: window.innerHeight });
+    const [canvasSize, setCanvasSize] = useState({ width: window.innerWidth, height: window.innerHeight });
 
     useEffect(() => {
         const handleResize = () => {

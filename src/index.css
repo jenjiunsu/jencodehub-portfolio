@@ -399,7 +399,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 30vh;
+    min-height: 40vh;
     overflow: hidden;
   }
 
@@ -500,19 +500,7 @@ body {
     @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
   }
 
-  .video-container {
-    width: 100%;
-    height: 100%;
-    display: block;
-  }
-
-  .video-container-small {
-    width: 100%;
-    height: 150px;
-  }
-
   .coming-soon-text {
-    margin-top: 2rem;
     letter-spacing: 0.4em;
     text-align: center;
   }
@@ -535,7 +523,9 @@ body {
 
   /* contact section */
   .contact-container {
-    @apply max-w-xl relative sm:px-10 mt-12;
+    max-width: 36rem;
+    position: relative;
+    padding-bottom: 20px;
   }
 
   .blobs {

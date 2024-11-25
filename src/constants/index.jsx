@@ -66,10 +66,6 @@ export const myProjects = [
 },
 {
     title: 'Coming Soon...',
-    desc: [],
-    subdesc: [],
-    href: [],
-    spotlight: [],
     logo: [],
     texture: '/textures/project/project2.mp4',
     tags: [],

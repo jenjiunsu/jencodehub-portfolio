@@ -4,12 +4,15 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { Center,OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import DemoComputer from "../components/DemoComputer";
+import { useMediaQuery } from 'react-responsive';
 
 
 const projectCount = myProjects.length;
 
 const Projects = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const isSmallScreen = useMediaQuery({ maxWidth: 640 });
+    const isSmallOrMedium = useMediaQuery({ maxWidth: 1024 });
 
     const handleNavigation = (direction) => {
         if (direction === 'next') {
@@ -50,35 +53,22 @@ const Projects = () => {
 
             <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full relative">
                 <div
-                    className={`bg-black-100 custom-border flex flex-col relative pb-5 sm: px-5 shadow-2xl shadow-black-200 ${
-                        currentProject.title === 'Coming Soon...' ? 'bg-[#121212]' : ''
-                    }`}
+                    className="bg-black-100 custom-border flex flex-col relative p-5 sm: px-5 shadow-2xl shadow-black-200 "
                 >
-                    <div className="flex justify-center items-center w-full">
-                        {currentProject.title === 'Coming Soon...' ? (
-                            <video
-                                src={currentProject.spotlight}
-                                autoPlay
-                                loop
-                                muted
-                                className="video-container pt-5"
-                            />
-                        ) : (
-                            <img
-                                src={currentProject.spotlight}
-                                alt="spotlight"
-                                className="video-container-small"
-                            />
-                        )}
-                    </div>
-                    
                     {currentProject.title !== 'Coming Soon...' && (
                         <div className="p-3 backdrop-filter backdrop-blur-1xl w-fit rounded-lg" style={currentProject.logoStyle}>
                             <img className="w-25 h-20 shadow-sm" src={currentProject.logo} alt="logo" />
                         </div>
                     )}
 
-                    <div className="flex flex-col gap-5 text-white-600 my-5">
+                    <div 
+                        className="flex flex-col gap-5 text-white-600 my-5"
+                        style={{ 
+                            marginTop: currentProject.title === 'Coming Soon...' 
+                                ? (isSmallOrMedium ? '7rem' : '15rem') 
+                                : 'initial' 
+                        }}
+                    >
                         <p className={`text-white text-2xl font-semibold animatedText ${currentProject.title === 'Coming Soon...' ? 'coming-soon-text' : ''}`}>
                             {currentProject.title === 'Coming Soon...' ? renderTitle(currentProject.title) : currentProject.title}
                         </p>

@@ -81,7 +81,7 @@ const About = () => {
                     <div className="grid-container custom-border bg-black-100">
                         <div className="relative z-10" ref={lineContainerRef}></div>
                         <div className="rounded-3xl w-full sm:h-[276px] h-fit justify-center items-centers pt-110 p-10">
-                                <p className="grid-headtext pb-2">This will be a website I created to document my self-learning journey.</p>
+                                <p className="grid-headtext">This will be a website I created to document my self-learning journey.</p>
                                 <p className="grid-subtext pb-5">You are welcome to leave messages and interact with me on the site!</p>
                                 <div className="custom-button text-white">
                                   <a href="#">

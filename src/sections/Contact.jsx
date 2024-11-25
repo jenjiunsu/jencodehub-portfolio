@@ -118,24 +118,11 @@ const Contact = () => {
     <section className="my-20 c-space" id="contact">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
 
-        <div className="relative flex min-h-screen items-center justify-center flex-col">
-            <img 
-                src="/assets/terminal.png" 
-                alt="terminal-bg" 
-                className="absolute inset-0 min-h-screen" 
-            />
-
-            <div className="contact-container mr-5 ml-3 p-3 pr-1">
-            <div className="blobs">
-                <div className="blob"></div>
-                <div className="blob"></div>
-                <div className="blob"></div>
-                <div className="blob"></div>
-                <div className="blob"></div>
-                <div className="blob"></div>
-                <div className="blob"></div>
-            </div>
+        <div className="relative flex min-h-screen items-center flex-col">
+                <div className="bg-black-100 custom-border flex flex-col items-center justify-center p-8 sm: px-5 shadow-2xl shadow-black-200 ">
+                
                 <h3 className="head-text">Contact Me</h3>
+                <div className="contact-container">
                 <p className="text-lg text-white-600 mt-3">I have a background in Information and Communication, with expertise in React.js, Three.js, and JavaScript, dedicated to creating intuitive and engaging web experiences.</p>
 
                 <form ref={formRef} onSubmit={handleSubmit} className="mt-3 flex flex-col space-y-5">
@@ -186,9 +173,19 @@ const Contact = () => {
                                 style={{ width: '28px', height: '28px' }}
                             />
                         </div>
-                    </button>
-                </form>
-            </div>
+                        </button>
+                    </form>
+                </div>
+                </div>
+        <div className="blobs">
+            <div className="blob"></div>
+            <div className="blob"></div>
+            <div className="blob"></div>
+            <div className="blob"></div>
+            <div className="blob"></div>
+            <div className="blob"></div>
+            <div className="blob"></div>
+        </div>
         </div>
     </section >
     )
