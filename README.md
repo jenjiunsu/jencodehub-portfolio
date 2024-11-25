@@ -1,6 +1,6 @@
 # jencodehub portfolio
 
-![封面照](./Banner.png)
+![封面照](.assets//Banner.png)
 
 #### 專案網址: https://jencodehub.netlify.app/
 
