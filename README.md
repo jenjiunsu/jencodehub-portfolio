@@ -1,39 +1,25 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/kt0FrkQgw8w" target="_blank">
-      <img src="https://github.com/user-attachments/assets/2afc2dc3-f840-4d98-9378-f34acd7df173" alt="Project Banner">
+    <a href="https://jencodehub.netlify.app/" target="_blank">
+      <img src="Banner.png" alt="Project Banner">
     </a>
   <br />
 
-  <div>
-    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
-    <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
+## 📋 <a name="table">目錄 Table of Contents</a>
 
-  <h3 align="center">A 3D Dev Portfolio</h3>
+1. [Introduction](#introduction)
+2. [Tech Stack](#tech-stack)
+3. [Features](#features)
+4. [Quick Start](#quick-start)
+5. [Links](#links)
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!!
-    </div>
-</div>
+## <a name="introduction">網站介紹 Introduction</a>
 
-## 📋 <a name="table">Table of Contents</a>
+Welcome to Jen Jiun Portfolio.
+This is a website showcasing my current technical capabilities and creative achievements.
+From intuitive navigation design to well-featured project displays, it strives to achieve a fine balance between visual appeal and user-centric design.
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets (Code to Copy)](#snippets)
-6. 🔗 [Links](#links)
-7. 📦 [Assets](#assets)
-8. 🚀 [More](#more)
-
-## <a name="introduction">🤖 Introduction</a>
-
-Built
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
+## <a name="tech-stack">技術棧 Tech Stack</a>
 
 - Node.js
 - React.js
@@ -44,27 +30,21 @@ Built
 - Vite
 - Tailwind CSS
 
-## <a name="features">🔋 Features</a>
+## <a name="features">重點特色 Features</a>
 
-👉 **Immersive Hero**: An eye-catching 3D hacker room that responds to mouse movements, surrounded by animated mini-models.
+**Immersive Girl**: An eye-catching 3D hacker room that responds to mouse movements, surrounded by animated mini-models.
 
-👉 **Interactive About Me**: A sleek bento grid layout featuring personal info, a 3D globe pinpointing location, tech stack icons, and a one-click email copy option.
+**Interactive About Me**: A sleek bento grid layout featuring personal info, a 3D globe pinpointing location, tech stack icons, and a one-click email copy option.
 
-👉 **Dynamic Project Showcase**: Browse through projects while watching live demos inside a 3D computer model, seamlessly switching between different projects.
+**Dynamic Project Showcase**: Browse through projects while watching live demos inside a 3D computer model, seamlessly switching between different projects.
 
-👉 **Engaging Experience Timeline**: Hover over career milestones to trigger interactive 3D animations that bring your professional journey to life.
+**Engaging Experience Timeline**: Hover over career milestones to trigger interactive 3D animations that bring your professional journey to life.
 
-👉 **Client Testimonials**: A dedicated section highlighting satisfied clients and their feedback.
+**Easy Contact Form**: A user-friendly email form for visitors to reach out directly from your portfolio.
 
-👉 **Easy Contact Form**: A user-friendly email form for visitors to reach out directly from your portfolio.
+**Clean Footer**: A minimalist design featuring social media links for easy networking.
 
-👉 **Clean Footer**: A minimalist design featuring social media links for easy networking.
-
-👉 **Fully Responsive**: Optimized layout ensuring a smooth experience across all devices, from desktop to mobile.
-
-and many more, including code architecture and reusability
-
-## <a name="quick-start">🤸 Quick Start</a>
+## <a name="quick-start">環境安裝 Quick Start</a>
 
 Follow these steps to set up the project locally on your machine.
 
@@ -91,18 +71,6 @@ Install the project dependencies using npm:
 npm install
 ```
 
-**Set Up Environment Variables**
-
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-REACT_APP_EMAILJS_USERID=your_emailjs_user_id
-REACT_APP_EMAILJS_TEMPLATEID=your_emailjs_template_id
-REACT_APP_EMAILJS_RECEIVERID=your_emailjs_receiver_id
-```
-
-Replace the placeholder values with your actual EmailJS credentials. You can obtain these credentials by signing up on the [EmailJS website](https://www.emailjs.com/).
-
 **Running the Project**
 
 ```bash
@@ -111,15 +79,14 @@ npm run dev
 
 Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
-## <a name="links">🔗 Links</a>
+## <a name="links">資源來源 Links</a>
 
-Here is the list of all the resources used in the project video:
+Here is the list of all the resources used in the project:
 
-- [Hacker Room](https://sketchfab.com/3d-models/hacker-room-stylized-a0cfe6edf2dd494c8a95addf6bb13a10)
-- [Computer](https://sketchfab.com/3d-models/3d-computer-sketchfab-weekly-11-mar23-d9931a9aba7c4ea1bc12b2a59dcef16e)
-- [Target Model](https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/target-stand/model.gltf)
-- [React Logo](https://sketchfab.com/3d-models/react-logo-76174ceeba96487f9863f974636f641e)
-- [gltfjsx](https://gltf.pmnd.rs/)
-- [ReadyPlayerMe](https://readyplayer.me/)
-- [Mixamo](https://www.mixamo.com/)
-- [FBX Animations ZIP](https://drive.google.com/file/d/1yQhrRvEQFEwxbjG2qelv_T-gAatXJ3N1/view?usp=sharing)
+- [Switch Girl](https://www.tripo3d.ai/)
+- [Computer](https://sketchfab.com/3d-models/lumen-64-computer-29bb034488474b79a21cdada562a060f)
+- [Cube](https://sketchfab.com/3d-models/rounded-cube-e1e49d4e8e3641a6ad111713947de416)
+- [Developer gltfjsx](https://gltf.pmnd.rs/)
+- [Developer ReadyPlayerMe](https://readyplayer.me/)
+- [Developer Mixamo](https://www.mixamo.com/)
+- [Rocket](https://sketchfab.com/3d-models/rocket-b17a0f9f805c4fa7b978829006bbb57f)

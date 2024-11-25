@@ -13,7 +13,7 @@ const WorkExperience = () => {
             <div className="w-full text-white-600">
                 <h3 className="head-text">My Work Experience</h3>
 
-                <div className="work-container ">
+                <div className="work-container">
                     <div className="work-canvas custom-border">
                         <Canvas>
                             <ambientLight intensity={7}/>

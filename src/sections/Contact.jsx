@@ -118,7 +118,7 @@ const Contact = () => {
     <section className="my-20 c-space" id="contact">
         {alert.show && <Alert type={alert.type} text={alert.text} />}
 
-        <div className="relative flex min-h-screen items-center flex-col">
+        <div className="relative flex items-center flex-col">
                 <div className="bg-black-100 custom-border flex flex-col items-center justify-center p-8 sm: px-5 shadow-2xl shadow-black-200 ">
                 
                 <h3 className="head-text">Contact Me</h3>
