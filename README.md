@@ -1,5 +1,7 @@
 # jencodehub portfolio
 
+![封面照](https://hackmd.io/_uploads/B1G9d1GXyl.png)
+
 #### 專案網址: https://jencodehub.netlify.app/
 
 ## <a name="table">目錄 Table of Contents</a>
