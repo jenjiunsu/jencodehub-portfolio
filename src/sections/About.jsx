@@ -58,7 +58,7 @@ const About = () => {
             <h3 className="head-text">About Me</h3>
             <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
                 <div className="col-span-1 xl:row-span-3">
-                    <div className="p-3 grid-container custom-border bg-black-100">
+                    <div className="p-8 grid-container custom-border bg-black-100">
                         <img src="assets/photo-1.png" alt="photo-1" className="w-full sm:h-[276px] h-fit object-contain" />
                         <div>
                             <p className="grid-headtext">Hi, I’m Jen Jiun Su</p>
@@ -70,7 +70,7 @@ const About = () => {
                 </div>
 
                 <div className="col-span-1 xl:row-span-3">
-                    <div className="p-4 grid-container custom-border bg-black-100">
+                    <div className="p-8 grid-container custom-border bg-black-100">
                         <img src="assets/tech.png" alt="tech" className="w-full sm:h-[276px] h-fit object-contain p-10" />
                         <p className="grid-headtext">Tech Stack</p>
                         <p className="grid-subtext">I specialize in a variety of languages, frameworks, and tools that allow me to build robust and scalable applications.</p>
@@ -93,13 +93,13 @@ const About = () => {
                 </div>
 
                 <div className="xl:col-span-2 xl:row-span-3 pt-37.5">
-                    <div className="grid-container custom-border bg-black-100">
+                    <div className="grid-container custom-border bg-black-100 p-8">
                         <div className='unique '><CubeComponent />
                           <div className="text-input-field">
                               <span className="typing-animation">{text}</span>
                           </div>
                         </div>
-                        <div className='sm: p-3'>
+                        <div>
                             <p className="grid-headtext">My Passion for Coding</p>
                             <p className="grid-subtext">
                                 I’m driven by the challenge of bringing ideas to life through code. 
@@ -110,10 +110,10 @@ const About = () => {
                 </div>
 
                 <div className="xl:col-span-1 xl:row-span-2">
-                    <div className="pl-5 pt-5 flex grid-container custom-border bg-black-100">
-                        <Box className="absolute inset-0 z-0" />
+                    <div className="pt-5 flex grid-container custom-border bg-black-100">
+                        <Box className="absolute inset-0 z-0 " />
                         <p className="grid-subtext text-center">Contact me</p>
-                        <div className="copy-container" onClick={handleCopy}>
+                        <div className="copy-container pb-5" onClick={handleCopy}>
                             <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
                             <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">jjsweb.tech@gmail.com</p>
                         </div>

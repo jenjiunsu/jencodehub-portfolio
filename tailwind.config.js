@@ -26,6 +26,9 @@ export default {
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
       },
+      fontSize: {
+        'sm': '0.75rem',
+      },
     },
   },
   plugins: [],
