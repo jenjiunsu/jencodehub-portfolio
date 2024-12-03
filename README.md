@@ -38,7 +38,10 @@
 
 **互動式自我介紹**：採用流暢的 bento 格子布局，展示我的個人資訊，包含無數俐落線條模擬的流星雨、模擬鍵盤打字動作的立體方塊、我目前掌握到的技術 LOGO，以及一鍵複製郵件地址的功能。
 <br />
-<img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/AboutMe.png" alt="Project Banner">
+<img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/AboutMe01.png" alt="Project Banner">
+<br />
+<br />
+<img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/AboutMe02.png" alt="Project Banner">
 <br />
 
 **動態項目展示**：透過 3D 電腦模型內的即時演示瀏覽專案，實現專案之間的無縫切換。
