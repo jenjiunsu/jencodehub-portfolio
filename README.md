@@ -34,33 +34,31 @@
 
 ## <a name="features">重點特色 Features</a>
 
-**沉浸式女孩**：一個具有吸引力的 3D Switch Girl，能夠根據鼠標移動作出互動（僅支援平板和電腦），周圍環繞著動態迷你模型。
-<br />
-<img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/3D_Switch_Girl.png" alt="Project Banner">
+**-沉浸式女孩**：一個具有吸引力的 3D Switch Girl，能夠根據鼠標移動作出互動（僅支援平板和電腦），周圍環繞著動態迷你模型。
 <br />
 
-**互動式自我介紹**：採用流暢的 bento 格子布局，展示我的個人資訊，包含無數俐落線條模擬的流星雨、模擬鍵盤打字動作的立體方塊、我目前掌握到的技術 LOGO，以及一鍵複製郵件地址的功能。
+**-互動式自我介紹**：採用流暢的 bento 格子布局，展示我的個人資訊，包含無數俐落線條模擬的流星雨、模擬鍵盤打字動作的立體方塊、我目前掌握到的技術 LOGO，以及一鍵複製郵件地址的功能。
 <br />
 <img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/AboutMe01.png" alt="Project Banner">
 
 <img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/AboutMe02.png" alt="Project Banner">
 
-**動態項目展示**：透過 3D 電腦模型內的即時演示瀏覽專案，實現專案之間的無縫切換。
+**-動態項目展示**：透過 3D 電腦模型內的即時演示瀏覽專案，實現專案之間的無縫切換。
 <br />
 <img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/ProjectShowcase.png" alt="Project Banner">
 <br />
 
-**互動式工作經歷時間軸**：鼠標懸停在職業里程碑上時，會觸發互動 3D 動畫，呈現我近期的工作經歷。
+**-互動式工作經歷時間軸**：鼠標懸停在職業里程碑上時，會觸發互動 3D 動畫，呈現我近期的工作經歷。
 <br />
 <img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/WorkExperience.png" alt="Project Banner">
 <br />
 
-**簡便的聯絡表單**：一個用戶友好的電子郵件表單，讓訪客可以直接從這個作品集中與我聯繫。
+**-簡便的聯絡表單**：一個用戶友好的電子郵件表單，讓訪客可以直接從這個作品集中與我聯繫。
 <br />
 <img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/ContactMe.png" alt="Project Banner">
 <br />
 
-** \* 簡潔的 Footer**：極簡設計，包含社交媒體鏈接（我的 GitHub 和 Codepen），方便進行網絡互動。
+**-簡潔的 Footer**：極簡設計，包含社交媒體鏈接（我的 GitHub 和 Codepen），方便進行網絡互動。
 <br />
 <img src="https://github.com/jenjiunsu/jenjing-portfolio/blob/main/public/assets/Footer.png" alt="Project Banner">
 <br />
