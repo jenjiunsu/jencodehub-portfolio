@@ -26,7 +26,7 @@ const WorkExperience = () => {
                         </Canvas>
                     </div>
 
-                    <div className="custom-border work-content">
+                    <div className="custom-border work-content mt-5 md:mt-0">
                         <div className="sm:py-10 py-5 sm:px-5 px-2.5">
                             {workExperiences.map(({id, name, pos, duration, title, animation, icon}) => (
                                 <div key={id} 

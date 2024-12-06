@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useMemo } from 'react'
 import { useGLTF, useAnimations, useVideoTexture } from '@react-three/drei'
 import PropTypes from 'prop-types';
 import { useGSAP } from '@gsap/react';
@@ -9,15 +9,15 @@ const DemoComputer = (props) => {
     const { nodes, materials, animations } = useGLTF('/models/computer.glb')
     const { actions } = useAnimations(animations, group)
 
-    const videoTexture = useVideoTexture(
-        props.texture || 'textures/project/project1.mp4','textures/project/project2.mp4',
+    const videoTexture = useMemo(() => useVideoTexture(
+        props.texture || 'textures/project/project1.mp4',
         {
             crossOrigin: 'Anonymous',
             loop: true,
             muted: true,
             autoplay: true,
         }
-    )
+    ), [props.texture])
 
     useEffect(() => {
         if (videoTexture) {
