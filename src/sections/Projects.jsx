@@ -3,7 +3,7 @@ import { myProjects } from "../constants"
 import { Canvas, useThree } from "@react-three/fiber";
 import { Center,OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
-// import DemoComputer from "../components/DemoComputer";
+import DemoComputer from "../components/DemoComputer";
 import { useMediaQuery } from 'react-responsive';
 
 
@@ -114,17 +114,19 @@ const Projects = () => {
 
                 <div className="custom-border bg-black-200 rounded-lg h-96 sm:h-full">
                     <Canvas>
-                        <ambientLight intensity={11} />
-                        <directionalLight position={[10, 10, 5]} intensity={2} />
-                        <pointLight position={[-10, -10, -10]} intensity={1.5} />
+                        <ambientLight intensity={10} />
+                        <directionalLight position={[15, 15, 5]} intensity={50} />
+                        <pointLight position={[-10, -10, -10]} intensity={40} />
                         <Center>
                             <Suspense fallback={<CanvasLoader />}>
                                 <DynamicScaleGroup>
-                                    {/* <DemoComputer texture={currentProject.texture} /> */}
+                                    <group rotation={[0, -Math.PI / 2, 0]}>
+                                        <DemoComputer texture={currentProject.texture} />
+                                    </group>
                                 </DynamicScaleGroup>
                             </Suspense>
                         </Center>
-                        <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
+                        <OrbitControls maxPolarAngle={Math.PI} enableZoom={false} />
                     </Canvas>
                 </div>
             </div>
