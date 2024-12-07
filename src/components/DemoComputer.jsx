@@ -35,8 +35,8 @@ const DemoComputer = (props) => {
 
     return (
     <group ref={group} {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0 ]} scale={0.006}>
-        <group rotation={[Math.PI / 2, 0, 0]}>
+      <group rotation={[Math.PI / 2, 0, 0 ]} scale={0.006}>
+        <group rotation={[-Math.PI / 2, 0, 0]}>
           <mesh
             position={[-15.25, 2820, -165]}
             rotation={[0.043 + Math.PI / 60, Math.PI, 0]}

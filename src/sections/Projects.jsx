@@ -120,7 +120,7 @@ const Projects = () => {
                         <Center>
                             <Suspense fallback={<CanvasLoader />}>
                                 <DynamicScaleGroup>
-                                    <group rotation={[0, -Math.PI / 2, 0]}>
+                                    <group rotation={[0, -Math.PI / 2, 0]} position={[0, -5, 0]}>
                                         <DemoComputer texture={currentProject.texture} />
                                     </group>
                                 </DynamicScaleGroup>
