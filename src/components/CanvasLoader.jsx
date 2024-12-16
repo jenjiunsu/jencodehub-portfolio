@@ -12,7 +12,7 @@ const CanvasLoader = () => {
                 flexDirection: 'column',
                 position: 'absolute',
                 top: '10%',
-                right: '10%',
+                left: '35%',
                 transform: 'translate(50%, -50%)',
                 zIndex: 1000,
             }}
